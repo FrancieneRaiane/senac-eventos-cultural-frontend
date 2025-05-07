@@ -1,11 +1,11 @@
-import React from 'react';
-import styles from './MyEventsPage.module.css';
+import React from "react";
+import styles from "./MyEventsPage.module.css";
 
 const MyEventsPage = () => {
   return (
     <div className={styles.container}>
       <header className={styles.header}>
-        <div>SENAC Eventos culturais</div>
+        <div><h2>SENAC Eventos culturais</h2></div>
         <div className={styles.headerButtons}>
           <button className={styles.button}>Eventos</button>
           <button className={styles.button}>Meus Eventos</button>
@@ -25,17 +25,33 @@ const MyEventsPage = () => {
           <tr>
             <td>Evento 1</td>
             <td>
-              <a href="#" className={styles.link}>Visualizar Participantes</a> |
-              <a href="#" className={styles.link}>Editar</a> |
-              <a href="#" className={styles.link}>Partilhar</a>
+              <a href="#" className={styles.link}>
+                Visualizar Participantes
+              </a>{" "}
+              |
+              <a href="#" className={styles.link}>
+                Editar
+              </a>{" "}
+              |
+              <a href="#" className={styles.link}>
+                Partilhar
+              </a>
             </td>
           </tr>
           <tr>
             <td>Evento 2</td>
             <td>
-              <a href="#" className={styles.link}>Visualizar Participantes</a> |
-              <a href="#" className={styles.link}>Editar</a> |
-              <a href="#" className={styles.link}>Partilhar</a>
+              <a href="#" className={styles.link}>
+                Visualizar Participantes
+              </a>{" "}
+              |
+              <a href="#" className={styles.link}>
+                Editar
+              </a>{" "}
+              |
+              <a href="#" className={styles.link}>
+                Partilhar
+              </a>
             </td>
           </tr>
         </tbody>

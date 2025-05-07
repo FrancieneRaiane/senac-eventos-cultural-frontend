@@ -1,83 +1,84 @@
 .container {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    margin: 0;
-    background: linear-gradient(135deg, #4A90E2, #9013FE);
-    color: #333;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #4a90e2, #9013fe);
+  color: #333;
 }
 
 .header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 20px;
-    position: absolute;
-    top: 0;
-    color: #fff;
-    font-weight: bold;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  position: absolute;
+  top: 0;
+  color: #fff;
+  font-weight: bold;
 }
 
 .headerButtons {
-    display: flex;
+  display: flex;
 }
 
 .button {
-    padding: 8px 15px;
-    font-size: 16px;
-    background-color: #4A90E2;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-left: 10px;
+  padding: 8px 15px;
+  font-size: 16px;
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
 }
 
 .button:hover {
-    background-color: #3b78c8;
+  background-color: #3b78c8;
 }
 
 .title {
-    margin-top: 100px;
-    color: #fff;
-    text-align: left;
-    width: 80%;
+  margin-top: 100px;
+  color: #fff;
+  text-align: left;
+  width: 80%;
 }
 
 .table {
-    width: 80%;
-    margin-top: 10px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-    border-collapse: collapse;
-    overflow: hidden;
+  width: 80%;
+  margin-top: 10px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  border-collapse: collapse;
+  overflow: hidden;
 }
 
-th, td {
-    padding: 15px;
-    text-align: center;
-    border-bottom: 1px solid #ddd;
+th,
+td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
 }
 
 th {
-    background-color: #4A90E2;
-    color: #fff;
+  background-color: #4a90e2;
+  color: #fff;
 }
 
 tr:last-child td {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 .link {
-    color: #4A90E2;
-    text-decoration: none;
-    font-weight: bold;
+  color: #4a90e2;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .link:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
