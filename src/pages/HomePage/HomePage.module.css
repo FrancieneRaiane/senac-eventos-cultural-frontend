@@ -1,3 +1,53 @@
+/* NOVOS ESTILOS ADICIONADOS */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.brand {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.loginButton {
+  background-color: transparent;
+  border: 1px solid #007bff;
+  color: #007bff;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.loginButton:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.registerText {
+  margin-top: 20px;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+.link:hover {
+  text-decoration: underline;
+}
 .container {
     display: flex;
     flex-direction: column;
@@ -5,6 +55,7 @@
     justify-content: center;
     height: 80vh;
     text-align: center;
+    padding-top: 100px; /* Adiciona espaço para o header fixo */
   }
   
   .title {

@@ -6,7 +6,6 @@ function EventsPage (){
             <h1 className={styles.title}> pagina de eventos</h1>
             <ButtonComponent />
         </>
-        
     )
 }
 
