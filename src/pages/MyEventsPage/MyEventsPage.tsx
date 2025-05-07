@@ -5,7 +5,7 @@ const MyEventsPage = () => {
   return (
     <div className={styles.container}>
       <header className={styles.header}>
-        <div>SENAC</div>
+        <div>SENAC Eventos culturais</div>
         <div className={styles.headerButtons}>
           <button className={styles.button}>Eventos</button>
           <button className={styles.button}>Meus Eventos</button>

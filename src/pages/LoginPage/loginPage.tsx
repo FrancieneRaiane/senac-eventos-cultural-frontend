@@ -5,7 +5,7 @@ const LoginPage = () => {
   return (
     <div className={styles.container}>
       <header className={styles.header}>
-        <div>SENAC</div>
+        <div>SENAC Eventos culturais</div>
         <button className={styles.loginButton}>Login</button>
       </header>
 
@@ -17,7 +17,7 @@ const LoginPage = () => {
         <input type="password" id="senha" placeholder="Digite sua senha" required className={styles.input} />
 
         <button type="submit" className={styles.submitButton}>Entrar</button>
-        <p>Não tem conta? <a href="#">Registre-se</a></p>
+        <p>Não tem uma conta? <a href="#">Registre-se</a></p>
       </form>
     </div>
   );
