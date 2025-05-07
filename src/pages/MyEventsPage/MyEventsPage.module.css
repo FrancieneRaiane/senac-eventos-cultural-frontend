@@ -40,53 +40,44 @@
     background-color: #3b78c8;
 }
 
-.cardsContainer {
-    display: flex;
-    gap: 20px;
-    margin-top: 80px;
+.title {
+    margin-top: 100px;
+    color: #fff;
+    text-align: left;
+    width: 80%;
 }
 
-.card {
+.table {
+    width: 80%;
+    margin-top: 10px;
     background: #fff;
-    padding: 15px;
     border-radius: 10px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-    width: 250px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
     text-align: center;
+    border-bottom: 1px solid #ddd;
 }
 
-.card img {
-    width: 100%;
-    height: 150px;
-    background-color: #ddd;
-    border-radius: 10px 10px 0 0;
-}
-
-.cardButton {
-    padding: 10px 0;
-    margin-top: 10px;
+th {
     background-color: #4A90E2;
     color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-    transition: background 0.3s;
 }
 
-.cardButton:hover {
-    background-color: #3b78c8;
+tr:last-child td {
+    border-bottom: none;
 }
 
-.cardLink {
-    margin-top: 5px;
-    text-decoration: none;
+.link {
     color: #4A90E2;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.cardLink:hover {
+.link:hover {
     text-decoration: underline;
 }
