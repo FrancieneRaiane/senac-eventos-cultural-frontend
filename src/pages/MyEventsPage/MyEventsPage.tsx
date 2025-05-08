@@ -1,16 +1,21 @@
 import React from "react";
 import styles from "./MyEventsPage.module.css";
+import Header from "../../components/HeaderComponent/HeaderComponent";
 
 const MyEventsPage = () => {
+  const handleEventClick =() =>{
+    //logica pra eventos
+  };
+  const handleMyEventClick = () =>{
+    //logica para meus eventos 
+  };
   return (
     <div className={styles.container}>
-      <header className={styles.header}>
-        <div><h2>SENAC Eventos culturais</h2></div>
-        <div className={styles.headerButtons}>
-          <button className={styles.button}>Eventos</button>
-          <button className={styles.button}>Meus Eventos</button>
-        </div>
-      </header>
+      <Header 
+        title="SENAC Eventos culturais" 
+        onEventClick={handleEventClick} 
+        onMyEventClick={handleMyEventClick} 
+      />
 
       <h1 className={styles.title}>Meus Eventos</h1>
 
