@@ -1,54 +1,44 @@
 import React from "react";
 import styles from "./EventsPage.module.css";
 import Header from "../../components/HeaderComponent/HeaderComponent";
+import EventCard from "../../components/EventCard/EventCard"; // ajuste o caminho se necessário
 
 const EventsPage = () => {
-  const handleEventClick = () =>{
-
+  const handleEventClick = () => {};
+  const handleMyEventClick = () => {};
+  const handleSubscribe = () => {
+    alert("Inscrição feita com sucesso!");
   };
-  const handleMyEventClick =() =>{
 
-  };
   return (
     <div className={styles.container}>
-       <Header 
-        title="SENAC Eventos culturais" 
-        onEventClick={handleEventClick} 
-        onMyEventClick={handleMyEventClick} 
+      <Header
+        title="SENAC Eventos culturais"
+        onEventClick={handleEventClick}
+        onMyEventClick={handleMyEventClick}
       />
 
       <div>
         <h1 className={styles.title}>Eventos</h1>
         <div className={styles.cardsContainer}>
-          <div className={styles.card}>
-            <img src="#" alt="Imagem do evento" />
-            <h3>Título do Evento</h3>
-            <p>Localização do evento</p>
-            <button className={styles.cardButton}>Inscrever-se</button>
-            <a href="#" className={styles.cardLink}>
-              Contactar o organizador
-            </a>
-          </div>
-
-          <div className={styles.card}>
-            <img src="#" alt="Imagem do evento" />
-            <h3>Título do Evento</h3>
-            <p>Localização do evento</p>
-            <button className={styles.cardButton}>Inscrever-se</button>
-            <a href="#" className={styles.cardLink}>
-              Contactar o organizador
-            </a>
-          </div>
-
-          <div className={styles.card}>
-            <img src="#" alt="Imagem do evento" />
-            <h3>Título do Evento</h3>
-            <p>Localização do evento</p>
-            <button className={styles.cardButton}>Inscrever-se</button>
-            <a href="#" className={styles.cardLink}>
-              Contactar o organizador
-            </a>
-          </div>
+          <EventCard
+            title="Feira de Artes"
+            location="Auditório SENAC"
+            imageSrc="#"
+            onSubscribe={handleSubscribe}
+          />
+          <EventCard
+            title="Palestra de Tecnologia"
+            location="Sala 204"
+            imageSrc="#"
+            onSubscribe={handleSubscribe}
+          />
+          <EventCard
+            title="Oficina de Teatro"
+            location="Teatro SENAC"
+            imageSrc="#"
+            onSubscribe={handleSubscribe}
+          />
         </div>
       </div>
     </div>
