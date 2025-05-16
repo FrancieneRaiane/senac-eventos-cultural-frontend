@@ -1,5 +1,6 @@
 import React, { useState, type FormEvent } from "react";
 import styles from "./LoginPage.module.css";
+import Header from "../../components/HeaderComponent/HeaderComponent";
 
 
 interface LoginProps{
@@ -51,10 +52,11 @@ const LoginPage: React.FC<LoginProps> =({ onLoginSuccess})  => {
                                                    ///////////
   return (
     <div className={styles.container}>
-      <header className={styles.header}>
-        <div><h2>SENAC Eventos Culturais</h2></div>
-        <button className={styles.loginButton}>Login</button>
-      </header>
+    <Header 
+        title="SENAC Eventos culturais" 
+        onEventClick={() => {}}
+        onMyEventClick={() => {}} 
+      />
 
       <form className={styles.form} onSubmit={handleSubmit}>
 

@@ -5,8 +5,10 @@
     padding: 15px 20px;
     position: absolute;
     top: 0;
-    color: #fff;
+    color: #004A8D;
     font-weight: bold;
+    background: white; 
+
   }
   
   .headerButtons {
@@ -16,7 +18,7 @@
   .button {
     padding: 8px 15px;
     font-size: 16px;
-    background-color: #4a90e2;
+    background-color: #F7941E;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -25,6 +27,6 @@
   }
   
   .button:hover {
-    background-color: #3b78c8;
+    background-color: #d27503;
   }
   

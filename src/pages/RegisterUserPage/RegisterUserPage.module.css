@@ -6,7 +6,7 @@
   justify-content: center;
   min-height: 100vh;
   margin: 0;
-  background: linear-gradient(135deg, #4a90e2, #9013fe);
+  background: #004A8D;
   padding-top: 80px;
   box-sizing: border-box;
   color: #333;
@@ -46,10 +46,9 @@
   border: 1px solid #ccc;
   font-size: 16px;
 }
-
 .submitButton {
   padding: 10px;
-  background-color: #4a90e2;
+  background-color: #F7941E;
   color: white;
   border: none;
   border-radius: 5px;
@@ -58,5 +57,5 @@
 }
 
 .submitButton:hover {
-  background-color: #3b78c8;
+  background-color: #d27503;
 }
