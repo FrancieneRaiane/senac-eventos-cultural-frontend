@@ -1,0 +1,74 @@
+.menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Logo x Links */
+    background-color:white;       /* Azul Senac */
+    padding: 0.5rem 1rem;
+  }
+  
+  /* Logo */
+  .logo {
+    color:  #004C94;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .linha-laranja{
+    background-color: #d27503;
+    padding: 0.5rem 1rem;
+  }
+  /* Container dos botões/links */
+.nav-links {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  /* Estilo comum para <a> e <button> */
+  .nav-links > a,
+  .nav-links > button {
+    background-color: #F7941D;  /* Laranja Senac */
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;      /* remove sublinhado dos <a> */
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  /* Hover */
+  .nav-links > a:hover,
+  .nav-links > button:hover {
+    background-color: #d27503;  /* Laranja claro */
+  }
+/* Frase centralizada */
+.centralizado {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 18px;
+  font-weight: bold;
+  color: #004C94;
+  white-space: nowrap;
+  
+}
+  .linha_laranja {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background-color: orange;
+    animation: fillLeft 2s forwards;
+    z-index: 1000;
+  }
+  
+  @keyframes fillLeft {
+    from {
+      transform: translateX(-100%); 
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }

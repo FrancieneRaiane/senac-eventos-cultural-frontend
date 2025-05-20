@@ -1,6 +1,7 @@
 import React, { useState,type FormEvent } from "react";
 import styles from "./RegisterUserPage.module.css";
 import Header from "../../components/HeaderComponent/HeaderComponent";
+import NavBarComponent from '../../components/NavBar/NavBarComponent'
 
 interface RegisterProps{
   onRegisterSuccess?: () => void;
@@ -48,12 +49,11 @@ const RegisterUserPage: React.FC<RegisterProps> = ({ onRegisterSuccess}) => {
   };
 
   return (
+    <div>
+      <NavBarComponent />
+   
     <div className={styles.container}>
-      <Header
-        title="SENAC Eventos culturais"
-        onEventClick={() => {}}
-        onMyEventClick={() => {}}
-      />
+      
 
       <div className={styles.formWrapper}>
         <h1 className={styles.title}>Registrar Usuário</h1>
@@ -98,6 +98,7 @@ const RegisterUserPage: React.FC<RegisterProps> = ({ onRegisterSuccess}) => {
           </button>
         </form>
       </div>
+    </div>
     </div>
   );
 };

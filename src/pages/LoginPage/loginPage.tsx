@@ -1,6 +1,8 @@
 import React, { useState, type FormEvent } from "react";
 import styles from "./LoginPage.module.css";
 import Header from "../../components/HeaderComponent/HeaderComponent";
+import ButtonComponent from '../../components/ButtonComponent/ButtonComponet'
+import NavBarComponent from '../../components/NavBar/NavBarComponent'
 
 
 import { useAuth } from "../../contexts/AuthContext"; // que esta em AuthContext
@@ -55,13 +57,11 @@ const LoginPage: React.FC =()  => {
 
                                                    ///////////
   return (
+    <div>
+    <NavBarComponent />
     <div className={styles.container}>
-    <Header 
-        title="SENAC Eventos culturais" 
-        onEventClick={() => {}}
-        onMyEventClick={() => {}} 
-      />
-
+    
+   
       <form className={styles.form} onSubmit={handleSubmit}>
 
         {error && <div>{error}</div>}
@@ -93,14 +93,17 @@ const LoginPage: React.FC =()  => {
           required
           className={styles.input}
         />
-
-        <button type="submit" className={styles.submitButton}>
+         <ButtonComponent text={"Entrar"} type='submit' />
+         
+        {/*<button type="submit" className={styles.submitButton}>
           Entrar
-        </button>
+        </button>*/}
+        <br />
         <p>
-          Não tem uma conta? <a href="#">Registre-se</a>
+          Não tem uma conta? <a href="/register">Registre-se</a>
         </p>
       </form>
+    </div>
     </div>
   );
 };

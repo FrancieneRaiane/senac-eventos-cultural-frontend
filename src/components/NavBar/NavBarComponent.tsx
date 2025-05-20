@@ -2,20 +2,20 @@ import styles from './NavBar.module.css';
 import { Link } from "react-router";
 import { useAuth } from "../../contexts/AuthContext";
 
-
-
 export default function NavBarComponent(){
     const {user, logout} = useAuth()
     
     return (
+        
         <nav className={styles.menu}>
             <div className={styles.logo}>Logo</div>
-
+            
+            <div className={styles.centralizado}>Senac Eventos Culturais</div>
             <div className={styles ['nav-links']}>
                 {user ?(
                     <>
                     <Link to= "/eventos">Eventos</Link>
-                    <Link to= "/meu-eventos">Meus Eventos</Link>
+                    <Link to= "/meus-eventos">Meus Eventos</Link>
                     {user.role === 'organizer' && (
                         <Link to="/painel-eventos">Painel de Eventos</Link>
                     )}
@@ -33,6 +33,11 @@ export default function NavBarComponent(){
                 )}
 
             </div>
+             {/* Linha laranja animada */}
+             <div className={styles.linha_laranja}></div>
         </nav>
+       
+       
     )
+    
 }

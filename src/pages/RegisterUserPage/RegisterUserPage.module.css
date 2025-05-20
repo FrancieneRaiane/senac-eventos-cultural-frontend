@@ -7,13 +7,13 @@
   min-height: 100vh;
   margin: 0;
   background: #004A8D;
-  padding-top: 80px;
+  padding-top: 10px;
   box-sizing: border-box;
   color: #333;
 }
 
 .title {
-  color: black;
+  color: #004C94;
   font-size: 32px;
   margin-bottom: 20px;
   text-align: center;

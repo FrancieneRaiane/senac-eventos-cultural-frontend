@@ -16,7 +16,7 @@
 
 .brand {
   font-size: 1.2rem;
-  color: #333;
+  color: #0f0902;;
 }
 
 .loginButton {
@@ -37,7 +37,7 @@
 .registerText {
   margin-top: 20px;
   font-size: 0.95rem;
-  color: #444;
+  color: #F7941D;;
 }
 
 .link {
@@ -53,19 +53,20 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 80vh;
+    height: 100vh;
     text-align: center;
     padding-top: 100px; /* Adiciona espaço para o header fixo */
+    background-color:  #004C94;
   }
   
   .title {
     font-size: 3rem;
-    color: #1a1a1a;
+    color: #F7941D;
     margin-bottom: 1rem;
   }
   
   .subtitle {
     font-size: 1.25rem;
-    color: #555;
+    color: #F7941D;;
   }
   
