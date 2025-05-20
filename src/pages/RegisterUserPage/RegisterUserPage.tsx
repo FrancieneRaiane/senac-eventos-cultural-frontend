@@ -41,10 +41,10 @@ const RegisterUserPage: React.FC<RegisterProps> = ({ onRegisterSuccess}) => {
       alert(`Erro ao registrar: ${msg}`);
     }
     
-    alert(`Usuário registrado:\nNome: ${name}\nEmail: ${email}\nTipo: ${type}`);
+   // alert(`Usuário registrado:\nNome: ${name}\nEmail: ${email}\nTipo: ${type}`);
     setName("");
     setEmail("");
-    setType("participante");
+   // setType("participante");
   };
 
   return (
@@ -57,6 +57,10 @@ const RegisterUserPage: React.FC<RegisterProps> = ({ onRegisterSuccess}) => {
 
       <div className={styles.formWrapper}>
         <h1 className={styles.title}>Registrar Usuário</h1>
+
+        {
+          error && <div className= {styles.error}>{error}</div>
+        }
         <form onSubmit={handleSubmit} className={styles.form}>
           <label htmlFor="name">Nome:</label>
           <input
@@ -71,16 +75,18 @@ const RegisterUserPage: React.FC<RegisterProps> = ({ onRegisterSuccess}) => {
           <input
             id="email"
             type="email"
+            className={styles.input}
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            placeholder="Digite seu email"
             required
           />
 
           <label htmlFor="type">Tipo:</label>
           <select
             id="type"
-            value={type}
-            onChange={(e) => setType(e.target.value)}
+           // value={type}
+          //  onChange={(e) => setType(e.target.value)}
             required
           >
             <option value="participante">Participante</option>
