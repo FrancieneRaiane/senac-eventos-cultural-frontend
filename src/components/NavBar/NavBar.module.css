@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between; /* Logo x Links */
-    background-color:white;       /* Azul Senac */
+    background-color:white;      
     padding: 0.5rem 1rem;
   }
   
@@ -13,10 +13,7 @@
     font-size: 1.5rem;
     font-weight: bold;
   }
-  .linha-laranja{
-    background-color: #d27503;
-    padding: 0.5rem 1rem;
-  }
+
   /* Container dos botões/links */
 .nav-links {
     display: flex;

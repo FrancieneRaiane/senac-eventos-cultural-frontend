@@ -1,6 +1,5 @@
 import React, { useState,type FormEvent } from "react";
 import styles from "./RegisterUserPage.module.css";
-import Header from "../../components/HeaderComponent/HeaderComponent";
 import NavBarComponent from '../../components/NavBar/NavBarComponent'
 
 interface RegisterProps{
@@ -50,14 +49,12 @@ const RegisterUserPage: React.FC<RegisterProps> = ({ onRegisterSuccess}) => {
 
   return (
     <div>
-      <NavBarComponent />
+    <NavBarComponent />
    
     <div className={styles.container}>
       
-
       <div className={styles.formWrapper}>
         <h1 className={styles.title}>Registrar Usuário</h1>
-
         {
           error && <div className= {styles.error}>{error}</div>
         }
@@ -82,10 +79,21 @@ const RegisterUserPage: React.FC<RegisterProps> = ({ onRegisterSuccess}) => {
             required
           />
 
+          <label htmlFor="Senha">Senha:</label>
+          <input
+            id="password"
+            type="password"
+            className={styles.input}
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            placeholder="Digite uma senha"
+            required
+          />
+
           <label htmlFor="type">Tipo:</label>
           <select
             id="type"
-           // value={type}
+           //value={type}
           //  onChange={(e) => setType(e.target.value)}
             required
           >

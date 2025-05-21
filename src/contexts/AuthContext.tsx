@@ -49,7 +49,6 @@ return(
     {children}
     </AuthContext.Provider>
 );
-
 }
 // verifica se esta passando os paramentros corretamente
 export function useAuth(){
