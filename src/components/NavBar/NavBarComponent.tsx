@@ -13,7 +13,8 @@ export default function NavBarComponent(){
                 {user ?(
                     <>
                     <Link to= "/eventos">Eventos</Link>
-                    <Link to= "/meus-eventos">Meus Eventos</Link>
+                    
+                    <Link to= "/myevents">Meus Eventos</Link>
                     {user.role === 'ORGANIZER' && (
                         <Link to="/painel-eventos">Painel de Eventos</Link>
                     )}
