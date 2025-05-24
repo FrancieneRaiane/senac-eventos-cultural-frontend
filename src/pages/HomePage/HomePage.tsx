@@ -71,7 +71,8 @@ function HomePage() {
         <>
             <NavBarComponent />
             <div className={styles.container}>
-                <h1>Eventos Cadastrados</h1>
+               <h1 className={styles.mainTitle}>Eventos Cadastrados</h1>
+
 
                 {events.length === 0 ? (
                     <p>Nenhum evento encontrado.</p>

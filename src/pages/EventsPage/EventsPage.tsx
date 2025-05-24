@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./EventsPage.module.css";
 import Header from "../../components/HeaderComponent/HeaderComponent";
 import EventCard from "../../components/EventCard/EventCard"; // ajuste o caminho se necessário
+import NavBarComponent from "../../components/NavBar/NavBarComponent";
 
 const EventsPage = () => {
   const handleEventClick = () => {};
@@ -11,13 +12,9 @@ const EventsPage = () => {
   };
 
   return (
+    <>
+    <NavBarComponent/>
     <div className={styles.container}>
-      <Header
-        title="SENAC Eventos culturais"
-        onEventClick={handleEventClick}
-        onMyEventClick={handleMyEventClick}
-      />
-
       <div>
         <h1 className={styles.title}>Eventos</h1>
         <div className={styles.cardsContainer}>
@@ -42,6 +39,7 @@ const EventsPage = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

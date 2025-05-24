@@ -1,16 +1,18 @@
 /* HomePage.module.css */
-
+body{
+  background-color:  #004C94;;
+}
 .container {
   max-width: 1200px;
   margin: 2rem auto;
   padding: 0 1.5rem;
   font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
+  background-color: #004C94;
   color: #333;
 }
 
 h1 {
-  color: #004C94; /* Azul Senac */
+  color:white; /* Azul Senac */
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -92,4 +94,10 @@ h1 {
   color: #F7941D; /* Laranja Senac */
   font-size: 1.1rem;
   text-align: right;
+}
+.mainTitle {
+  color:  #F7941D; /* Laranja Senac */
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
 }
