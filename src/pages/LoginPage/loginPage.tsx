@@ -54,14 +54,13 @@ const LoginPage: React.FC =()  => {
 
   };
 
-
                                                    ///////////
   return (
+    <>
     <div>
     <NavBarComponent />
     <div className={styles.container}>
-    
-   
+      <h1>Faça o Login</h1>
       <form className={styles.form} onSubmit={handleSubmit}>
 
         {error && <div>{error}</div>}
@@ -105,6 +104,7 @@ const LoginPage: React.FC =()  => {
       </form>
     </div>
     </div>
+    </>
   );
 };
 
