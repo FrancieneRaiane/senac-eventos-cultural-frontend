@@ -1,0 +1,71 @@
+.pmOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.pmModal {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.pmClose {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.pmClose:hover {
+  transform: scale(1.2);
+}
+
+.pmError {
+  color: #e74c3c;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.pmList {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.pmItem {
+  padding: 0.75rem;
+  border-bottom: 1px solid #ddd;
+  font-size: 0.95rem;
+}
+
+.pmItem:last-child {
+  border-bottom: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  } 
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -135,6 +135,7 @@ function DashBoardPage() {
   return (
     <>
       <NavBarComponent />
+      <br /> <br />
       <div className={styles.container}>
         <h1>Meus Eventos</h1>
         <div className={styles.addButtonContainer}>

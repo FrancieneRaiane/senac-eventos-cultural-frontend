@@ -64,7 +64,7 @@ function HomePage() {
   const handleSubscribe = async (eventId: number) => {
     const token = localStorage.getItem("token");
     if (!token) {
-      alert("Você precisa estar autenticado.");
+      alert("Você precisa estar autenticado. Favor fazer login");
       return;
     }
     setSubscribing(eventId);
