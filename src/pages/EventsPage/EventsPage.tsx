@@ -13,32 +13,32 @@ const EventsPage = () => {
 
   return (
     <>
-    <NavBarComponent/>
-    <div className={styles.container}>
-      <div>
-        <h1 className={styles.title}>Eventos</h1>
-        <div className={styles.cardsContainer}>
-          <EventCard
-            title="Feira de Artes"
-            location="Auditório SENAC"
-            imageSrc="#"
-            onSubscribe={handleSubscribe}
-          />
-          <EventCard
-            title="Palestra de Tecnologia"
-            location="Sala 204"
-            imageSrc="#"
-            onSubscribe={handleSubscribe}
-          />
-          <EventCard
-            title="Oficina de Teatro"
-            location="Teatro SENAC"
-            imageSrc="#"
-            onSubscribe={handleSubscribe}
-          />
+      <NavBarComponent />
+      <div className={styles.container}>
+        <div>
+          <h1 className={styles.title}>Eventos</h1>
+          <div className={styles.cardsContainer}>
+            <EventCard
+              title="Feira de Artes"
+              location="Auditório SENAC"
+              imageSrc="#"
+              onSubscribe={handleSubscribe}
+            />
+            <EventCard
+              title="Palestra de Tecnologia"
+              location="Sala 204"
+              imageSrc="#"
+              onSubscribe={handleSubscribe}
+            />
+            <EventCard
+              title="Oficina de Teatro"
+              location="Teatro SENAC"
+              imageSrc="#"
+              onSubscribe={handleSubscribe}
+            />
+          </div>
         </div>
       </div>
-    </div>
     </>
   );
 };

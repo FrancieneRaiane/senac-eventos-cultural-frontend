@@ -6,14 +6,14 @@
   justify-content: center;
   min-height: 100vh;
   margin: 0;
-  background: #004A8D;
+  background: #004a8d;
   padding-top: 10px;
   box-sizing: border-box;
   color: #333;
 }
 
 .title {
-  color: #004C94;
+  color: #004c94;
   font-size: 32px;
   margin-bottom: 20px;
   text-align: center;
@@ -48,7 +48,7 @@
 }
 .submitButton {
   padding: 10px;
-  background-color: #F7941E;
+  background-color: #f7941e;
   color: white;
   border: none;
   border-radius: 5px;

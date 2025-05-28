@@ -8,13 +8,12 @@ const MyEventsPage = () => {
     //logica pra eventos
   };
   const handleMyEventClick = () => {
-    //logica para meus eventos 
+    //logica para meus eventos
   };
   return (
     <>
       <NavBarComponent />
       <div className={styles.container}>
-
         <h1 className={styles.title}>Meus Eventos</h1>
 
         <table className={styles.table}>

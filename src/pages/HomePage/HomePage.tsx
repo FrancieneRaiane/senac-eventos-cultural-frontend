@@ -22,7 +22,8 @@ function HomePage() {
   const [subscribedIds, setSubscribedIds] = useState<Set<number>>(new Set());
   const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false);
 
-  const baseUrl = "https://senac-eventos-cultural-backend-production.up.railway.app";
+  const baseUrl =
+    "https://senac-eventos-cultural-backend-production.up.railway.app";
 
   useEffect(() => {
     const fetchEvents = async () => {
@@ -111,7 +112,9 @@ function HomePage() {
                       <p className={styles.location}>{evt.location}</p>
                       <p className={styles.description}>{evt.description}</p>
                       <p className={styles.price}>
-                        {evt.price > 0 ? `R$ ${evt.price.toFixed(2)}` : "Gratuito"}
+                        {evt.price > 0
+                          ? `R$ ${evt.price.toFixed(2)}`
+                          : "Gratuito"}
                       </p>
 
                       <button
