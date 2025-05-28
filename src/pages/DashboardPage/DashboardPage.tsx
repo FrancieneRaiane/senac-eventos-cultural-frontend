@@ -178,68 +178,74 @@ function DashBoardPage() {
           </tbody>
         </table>
       </div>
+{editing && (
+  <div className={styles.modalOverlay}>
+    <div className={styles.modal}>
+      <h2>Editar Evento</h2>
 
-      {editing && (
-        <div className={styles.modalOverlay}>
-          <div className={styles.modal}>
-            <h2>Editar Evento</h2>
-            {modalError && <div className={styles.error}>{modalError}</div>}
-            <form onSubmit={handleUpdate}>
-              <label>
-                Título
-                <input
-                  type="text"
-                  value={formData.title}
-                  onChange={e => setFormData(f => ({ ...f, title: e.target.value }))}
-                  required
-                />
-              </label>
-              <label>
-                Descrição
-                <textarea
-                  value={formData.description}
-                  onChange={e => setFormData(f => ({ ...f, description: e.target.value }))}
-                  required
-                />
-              </label>
-              <label>
-                Localização
-                <input
-                  type="text"
-                  value={formData.location}
-                  onChange={e => setFormData(f => ({ ...f, location: e.target.value }))}
-                  required
-                />
-              </label>
-              <label>
-                Preço (R$)
-                <input
-                  type="number"
-                  min="0"
-                  value={formData.price ?? ''}
-                  onChange={e => setFormData(f => ({ ...f, price: Number(e.target.value) }))}
-                  required
-                />
-              </label>
-              <label>
-                Novo Banner (opcional)
-                <input
-                  type="file"
-                  accept="image/*"
-                  onChange={e => {
-                    const file = e.target.files?.[0];
-                    setFormData(f => ({ ...f, bannerFile: file }));
-                  }}
-                />
-              </label>
-              <div className={styles.modalActions}>
-                <button type="button" onClick={() => setEditing(null)}>Cancelar</button>
-                <button type="submit">Salvar</button>
-              </div>
-            </form>
-          </div>
+      {modalError && <div className={styles.error}>{modalError}</div>}
+
+      <form onSubmit={handleUpdate}>
+        <label>
+          Título
+          <input
+            type="text"
+            value={formData.title}
+            onChange={e => setFormData(f => ({ ...f, title: e.target.value }))}
+            required
+          />
+        </label>
+
+        <label>
+          Descrição
+          <textarea
+            value={formData.description}
+            onChange={e => setFormData(f => ({ ...f, description: e.target.value }))}
+            required
+          />
+        </label>
+
+        <label>
+          Localização
+          <input
+            type="text"
+            value={formData.location}
+            onChange={e => setFormData(f => ({ ...f, location: e.target.value }))}
+            required
+          />
+        </label>
+
+        <label>
+          Preço (R$)
+          <input
+            type="number"
+            min="0"
+            value={formData.price ?? ''}
+            onChange={e => setFormData(f => ({ ...f, price: Number(e.target.value) }))}
+            required
+          />
+        </label>
+
+        <label>
+          Novo Banner (opcional)
+          <input
+            type="file"
+            accept="image/*"
+            onChange={e => {
+              const file = e.target.files?.[0];
+              setFormData(f => ({ ...f, bannerFile: file }));
+            }}
+          />
+        </label>
+
+        <div className={styles.modalActions}>
+          <button type="button" onClick={() => setEditing(null)}>Cancelar</button>
+          <button type="submit">Salvar</button>
         </div>
-      )}
+      </form>
+    </div>
+  </div>
+)}
     </>
   );
 }
