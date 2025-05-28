@@ -59,6 +59,7 @@ const LoginPage: React.FC =()  => {
     <>
     <div>
     <NavBarComponent />
+    
     <div className={styles.container}>
       <h1>Faça o Login</h1>
       <form className={styles.form} onSubmit={handleSubmit}>

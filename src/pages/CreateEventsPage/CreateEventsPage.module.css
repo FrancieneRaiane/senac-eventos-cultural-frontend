@@ -1,5 +1,6 @@
 /* CreateEventPage.module.css */
 
+/* Container centralizado com fundo branco, borda arredondada e sombra suave */
 .container {
   max-width: 600px;
   margin: 2rem auto;
@@ -9,6 +10,7 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
+/* Título principal da página com cor azul Senac e centralizado */
 h1 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
@@ -16,6 +18,7 @@ h1 {
   text-align: center;
 }
 
+/* Estilo para mensagens de erro com fundo vermelho e texto branco */
 .error {
   background-color: #e74c3c;
   color: #ffffff;
@@ -24,6 +27,7 @@ h1 {
   margin-bottom: 1rem;
 }
 
+/* Estilo para mensagens de sucesso com fundo verde e texto branco */
 .success {
   background-color: #2ecc71;
   color: #ffffff;
@@ -32,12 +36,14 @@ h1 {
   margin-bottom: 1rem;
 }
 
+/* Formulário com layout em coluna e espaçamento entre campos */
 .form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
+/* Labels com disposição em coluna e texto com peso médio */
 .form label {
   display: flex;
   flex-direction: column;
@@ -45,6 +51,7 @@ h1 {
   color: #333333;
 }
 
+/* Inputs e textarea com espaçamento interno, borda cinza clara e arredondada */
 .form input[type="text"],
 .form input[type="number"],
 .form input[type="file"],
@@ -55,13 +62,26 @@ h1 {
   border-radius: 4px;
   font-size: 1rem;
   font-family: inherit;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Efeito visual ao focar nos inputs e textarea */
+.form input[type="text"]:focus,
+.form input[type="number"]:focus,
+.form input[type="file"]:focus,
+.form textarea:focus {
+  border-color: #004C94; /* Azul Senac */
+  outline: none;
+  box-shadow: 0 0 5px #004C94aa; /* Sombra azul suave */
+}
+
+/* Textarea com altura mínima e possibilidade de redimensionar verticalmente */
 .form textarea {
   resize: vertical;
   min-height: 120px;
 }
 
+/* Botão alinhado à direita, com cor laranja Senac, arredondado e sombra */
 .form button {
   align-self: flex-end;
   background-color: #F7941D; /* Laranja Senac */
@@ -69,12 +89,15 @@ h1 {
   padding: 0.75rem 1.5rem;
   border: none;
   border-radius: 4px;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 500;
   cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(247, 148, 29, 0.4);
 }
 
+/* Mudança de cor e sombra do botão quando o mouse está sobre ele */
 .form button:hover {
   background-color: #FDC180; /* Laranja claro */
+  box-shadow: 0 6px 10px rgba(253, 193, 128, 0.6);
 }
