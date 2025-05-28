@@ -12,11 +12,11 @@ export default function NavBarComponent(){
             <div className={styles ['nav-links']}>
                 {user ?(
                     <>
-                    <Link to= "/eventos">Eventos</Link>
+                    <Link to= "/">Eventos</Link>
                     
                     <Link to= "/myevents">Meus Eventos</Link>
                     {user.role === 'ORGANIZER' && (
-                        <Link to="/painel-eventos">Painel de Eventos</Link>
+                        <Link to="/dashboard">Painel de Eventos</Link>
                     )}
                     {/* so chama logout, sem to="-" */}
                     <button onClick={logout}>Sair</button>
