@@ -8,5 +8,4 @@ export const ROUTES = {
     register: '/register',
     create_events: '/create_events',
     dashboard: '/dashboard'
-
 };
