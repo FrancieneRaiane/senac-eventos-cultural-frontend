@@ -1,4 +1,4 @@
-import DashBoardPage from "../pages/DashboardPage/DashboardPage";
+
 
 export const ROUTES = {
     home: '/',
