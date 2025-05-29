@@ -1,4 +1,4 @@
-import React, { useState, type FormEvent } from "react";
+import React, { useState } from "react";
 import styles from "./RegisterUserPage.module.css";
 import NavBarComponent from "../../components/NavBar/NavBarComponent";
 
@@ -90,12 +90,12 @@ const RegisterUserPage: React.FC<RegisterProps> = ({ onRegisterSuccess }) => {
             <label htmlFor="type">Tipo:</label>
             <select
               id="type"
-              //value={type}
-              //  onChange={(e) => setType(e.target.value)}
+              value={role}
+              onChange={e => setRole(e.target.value as 'PARTICIPANT' | 'ORGANIZER')}
               required
             >
-              <option value="participante">Participante</option>
-              <option value="organizador">Organizador</option>
+              <option value="PARTICIPANT">Participante</option>
+              <option value="ORGANIZER">Organizador</option>
             </select>
 
             <button type="submit" className={styles.submitButton}>

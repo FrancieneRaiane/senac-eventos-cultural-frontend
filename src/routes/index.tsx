@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router";
 import { ROUTES } from "../config/routes";
 import HomePage from "../pages/HomePage/HomePage";
 import EventsPage from "../pages/EventsPage/EventsPage";
-import LoginPage from "../pages/LoginPage/LoginPage";
+import LoginPage from "../pages/LoginPage/loginPage";
 import MyEventsPage from "../pages/MyEventsPage/MyEventsPage";
 import RegisterUserPage from "../pages/RegisterUserPage/RegisterUserPage";
 import CreateEventsPage from "../pages/CreateEventsPage/CreateEventsPage";
