@@ -1,6 +1,5 @@
 import React, { useState, type FormEvent } from "react";
 import styles from "./LoginPage.module.css";
-import Header from "../../components/HeaderComponent/HeaderComponent";
 import ButtonComponent from "../../components/ButtonComponent/ButtonComponet";
 import NavBarComponent from "../../components/NavBar/NavBarComponent";
 

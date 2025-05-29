@@ -1,15 +1,10 @@
-import React from "react";
+
 import styles from "./MyEventsPage.module.css";
-import Header from "../../components/HeaderComponent/HeaderComponent";
+
 import NavBarComponent from "../../components/NavBar/NavBarComponent";
 
 const MyEventsPage = () => {
-  const handleEventClick = () => {
-    //logica pra eventos
-  };
-  const handleMyEventClick = () => {
-    //logica para meus eventos
-  };
+  
   return (
     <>
       <NavBarComponent />
